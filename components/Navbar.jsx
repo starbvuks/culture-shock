@@ -39,22 +39,20 @@ const Navbar = () => {
   };
 
   return (
-    <div className="font-monstserrat shadow-[#DFD2B2] shadow-lg w-full mb-24 px-10 bg-main-bg border-b-2 border-gray-200 flex justify-between items-center align-middle">
+    <div className="font-monstserrat shadow-[#DFD2B2] shadow-lg w-full px-10 bg-main-bg border-b-2 border-gray-200 flex justify-between items-center align-middle">
       <img src="/cs-logo.png" className="py-1 w-16" alt="logo" />
-      <div className="w-[75%] flex gap-12">
+      <div className="w-[85%] flex gap-12">
         <div className="flex w-[50%] gap-10 justify-center items-center">
-          <HoverText>
-            <Link href="/" className="tracking-tight">
-              <span>about us</span>
+            <Link href="/" className="tracking-tight bg-main-bg px-3 py-1 rounded-full transition-shadow hover:drop-shadow-xl focus:shadow-inner-large">
+              <span className="whitespace-nowrap">about us</span>
             </Link>
-          </HoverText>
-          <Link href="/" className="tracking-tight">
+          <Link href="/" className="tracking-tight bg-main-bg px-3 py-1 rounded-full transition-shadow hover:drop-shadow-xl focus:shadow-inner-large">
             <span>products</span>
           </Link>
-          <Link href="/" className="tracking-tight">
+          <Link href="/" className="tracking-tight bg-main-bg px-3 py-1 rounded-full transition-shadow hover:drop-shadow-xl focus:shadow-inner-large">
             <span>cities</span>
           </Link>
-          <Link href="/" className="tracking-tight">
+          <Link href="/" className="tracking-tight bg-main-bg px-3 py-1 rounded-full transition-shadow hover:drop-shadow-xl focus:shadow-inner-large">
             <span>communities</span>
           </Link>
         </div>
@@ -89,10 +87,10 @@ const Navbar = () => {
           )}
         </div>
         <div className="gap-8 flex items-center justify-end">
-          <Link href="/" className="tracking-tight">
+          <Link href="/" className="tracking-tight bg-main-bg p-2 rounded-full transition-shadow hover:drop-shadow-xl focus:shadow-inner-large">
             <UserRound strokeWidth={2} size={30}/>
           </Link>
-          <Link href="/" className="tracking-tight">
+          <Link href="/" className="tracking-tight bg-main-bg p-2 rounded-full transition-shadow hover:drop-shadow-xl focus:shadow-inner-large">
             <ShoppingCart strokeWidth={2} size={30}/>
           </Link>
         </div>
